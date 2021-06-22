@@ -16,6 +16,12 @@ getMovies();
 function massageData(data){
     let movies = [];
     data.forEach(function (movie){
+        // sorts property values to give Not Found in-place of empty string;
+        for (let property in movie){
+            if (movie[property] == ""){
+                movie[property] = "Not Found"
+            }
+        }
         movies.push(
             {
             actors: movie.actors,
@@ -29,8 +35,9 @@ function massageData(data){
             year: movie.year
         }
         );
-        console.log(movies);
+        // console.log(movies);
 
     })
+
     appendNewData(movies);
 }

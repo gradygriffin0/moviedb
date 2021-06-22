@@ -2,3 +2,22 @@
     width: 90%;
     height: auto;
 }
+@media only screen and (max-width: 600px) {
+    .movie-div img {
+        width: 125px;
+        height: 200px;
+    }
+    /*#cardHolder {*/
+    /*    display: flex;*/
+    /*    flex-flow: nowrap column;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*}*/
+    /*.overflow-p{*/
+    /*    text-overflow: ellipsis;*/
+    /*    white-space: nowrap;*/
+    /*}*/
+    .display-6 {
+        font-size: 1.15rem !important;
+    }
+}
