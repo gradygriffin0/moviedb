@@ -3,21 +3,54 @@
     height: auto;
 }
 @media only screen and (max-width: 600px) {
+    #mainHouse {
+        width: 100%;
+    }
+    /*.text-display{*/
+    /*    display: none !important;*/
+    /*}*/
+    .movie-div{
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+    }
+    .movie-div span {
+        width: 80%;
+    }
+    .movie-div-house{
+        width: 125px;
+        height: 210px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-overflow: ellipsis;
+    }
     .movie-div img {
         width: 125px;
         height: 200px;
     }
-    /*#cardHolder {*/
-    /*    display: flex;*/
-    /*    flex-flow: nowrap column;*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*}*/
-    /*.overflow-p{*/
-    /*    text-overflow: ellipsis;*/
-    /*    white-space: nowrap;*/
-    /*}*/
+    .text-display-inner{
+        width: 125px;
+        height: 200px;
+        overflow: auto;
+    }
+
     .display-6 {
         font-size: 1.15rem !important;
     }
+
+    #navbar-outer {
+        width: 100%;
+        height: 45px;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .navbuffer{
+        margin-top: 75px;
+    }
+
 }

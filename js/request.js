@@ -4,6 +4,9 @@ function getMovies(){
         type: "GET",
         success: function(data){
             massageData(data);
+        },
+        error: function(){
+            window.reload();
         }
 
 
