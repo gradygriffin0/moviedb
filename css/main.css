@@ -6,6 +6,14 @@
     #mainHouse {
         width: 100%;
     }
+    #movie-banner{
+        display: none;
+    }
+    #movie-loading-img{
+        position: absolute;
+        left: 25%;
+        top: 25%;
+    }
 
     /*.text-display{*/
     /*    display: none !important;*/
