@@ -28,6 +28,9 @@ function appendNewData(movie) {
 <!--                                        </div>-->
                                         <p class="text-movie-desc text-center">${movie.plot}</p>
                                         <hr/>
+                                        <br>
+                                        <p class="text-movie-desc text-center">Directed by: <br>${movie.director}</p>
+                                        <p class="text-movie-desc text-center">Starring: <br>${movie.actors}</p>
 
                                         
                                     </div>
