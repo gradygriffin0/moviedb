@@ -15,15 +15,20 @@ function appendNewData(movie) {
                         <div class="text-display movie-div border d-none"> 
                             <div class="text-display-inner">
                                 <div class="card text-card"> 
+                                    <span class="w-100 text-warning bg-dark text-center">${movie.rating}/5 <img class="star-img" src="assets/star.svg"></span>
                                     <div class="card-body"> 
                                         <div class="d-flex justify-content-center ">
-                                        <span class="badge  text-warning bg-dark ">${movie.rating}/5 <img class="star-img" src="assets/star.svg"></span> 
+                                         
                                         
                                         </div>
-                                        <div class="mt-3 mb-1 d-flex justify-content-center"> 
-                                        <span class="badge text-warning bg-dark "> Plot: </span>
-                                        </div>
+<!--                                        <hr>-->
+                                        <div class="text-center"> Plot: </div>
+<!--                                        <div class="mb-1 d-flex justify-content-center"> -->
+<!--&lt;!&ndash;                                        <span class="text-warning bg-dark "> Plot: </span>&ndash;&gt;-->
+<!--                                        </div>-->
                                         <p class="text-movie-desc text-center">${movie.plot}</p>
+                                        <hr/>
+
                                         
                                     </div>
                                 </div>
@@ -38,6 +43,7 @@ function appendNewData(movie) {
 
     addClickEvents();
 }
+
 
 function addClickEvents() {
     $(".movie-div").click(function () {

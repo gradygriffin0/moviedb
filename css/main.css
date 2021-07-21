@@ -50,9 +50,14 @@
     }
     .text-movie-desc{
         font-size: 10px;
-
     }
-
+    .card-body{
+        min-height: 200px;
+    }
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     .display-6 {
         font-size: 1.15rem !important;
