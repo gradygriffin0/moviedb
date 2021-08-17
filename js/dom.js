@@ -49,6 +49,12 @@ function appendNewData(movie) {
 
 
 function addClickEvents() {
+    movieClick();
+    anchorClick();
+
+}
+
+function movieClick(){
     $(".movie-div").click(function () {
         if (!$(this).children().children(".text-display").hasClass('d-none')) {
 
@@ -63,5 +69,11 @@ function addClickEvents() {
 
         }
 
+    })
+}
+
+function anchorClick(){
+    $("#searchanchor").click(function(){
+        $("#searchBar").toggleClass("d-none");
     })
 }

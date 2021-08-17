@@ -14,16 +14,30 @@
         <title>Movie DB</title>
     </head>
     <body class="bg-light">
+
         <div id="navbar-outer" class="navbar navbar-brand navbar-dark bg-dark">
             <div class="text-warning display-5 mx-3"> MOVIEDB
 
             </div>
         </div>
-        <div id="movie-loading-img" class="m-auto"><img src="assets/Cube-0.9s-184px.svg" alt=""></div>
-        <div id="movie-banner" class="display-5 text-warning bg-dark navbuffer text-center"> MOVIES: </div>
+
+        <div class ="container my-5" id="searchBar">
+            <div class="input-group">
+                <input id= "searchInput" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                       aria-describedby="search-addon" />
+                <button id="searchButton" type="button" class="btn btn-outline-primary">search</button>
+            </div>
+        </div>
+
+<!--        <div id="movie-loading-img" class="m-auto"><img src="assets/Cube-0.9s-184px.svg" alt=""></div>-->
+        <div id="movie-banner" class="d-none display-5 text-warning bg-dark navbuffer text-center"> MOVIES: </div>
         <div id="mainHouse" class="mx-auto">
             <div id="cardHolder" class="row row-cols-2 no-gutters"></div>
         </div>
+
+        <a class="text-center" id="searchanchor" href="#searchBar" >Back to top</a>
+
+
 
 
         <script src="lib/jquery-2.2.4.js"></script>

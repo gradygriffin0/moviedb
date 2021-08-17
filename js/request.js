@@ -1,14 +1,14 @@
 
-
-function getMovies(){
+function search(){}
+function getMovies(query){
     // $("#movie-banner").hide();
     $.ajax({
-        url: "https://simple-acoustic-platinum.glitch.me/movies",
+        url: "http://localhost:8080/movies",
         type: "GET",
         success: function(data){
             $("#movie-loading-img").hide();
             $("#movie-banner").show();
-            massageData(data);
+            massageData(JSON.parse(data));
         },
         error: function(){
             window.reload();
